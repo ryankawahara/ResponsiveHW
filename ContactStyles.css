@@ -1,0 +1,477 @@
+@font-face {
+  font-family: 'GilroyBold';
+  src: url('gilroy-extrabold.otf');
+}
+
+@font-face {
+  font-family: 'GilroyLight';
+  src: url('Gilroy-Light.otf');
+}
+
+html body{
+  color:#FFB600;
+
+  margin: 0;
+  padding:0;
+  background-color:#111127;
+  /* height:1500px; */
+}
+
+.fullPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 940px;
+
+}
+
+a {
+  text-decoration: none;
+  color:#FFB600;
+
+}
+.titleSection{
+  width:75%;
+  /* background-color: pink; */
+  font-family:GilroyBold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+
+}
+
+.titleSection h1{
+margin:0;
+padding:0;
+font-size:80px;
+
+}
+
+.titleSection p{
+  margin:0;
+  padding:0;
+  font-size:25px;
+
+}
+.navMenu{
+  margin:0;
+  padding:0;
+  /* outline: 5px solid white; */
+
+  /* margin-top: 5vw; */
+width:99%;
+
+display: grid;
+/* padding:5px; */
+grid-template-columns: 4fr 4fr 4fr 4fr 4fr 4fr 4fr;
+/* background-color: green; */
+
+  /* padding: 5vw; */
+  font-size: 40px;
+
+  /* from https://css-tricks.com/how-do-you-do-max-font-size-in-css/ */
+}
+
+
+.currentPage{
+  text-decoration: underline;
+
+}
+.box{
+  /* outline: 5px solid white; */
+
+  margin-left: 0.25vw;
+  margin-right: 0.25vw;
+  /* margin-top: 40px; */
+  align-self:center;
+  /* border: 1px solid white; */
+  /* margin:10px; */
+  height:30px;
+  padding:0;
+  /* background-color:red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: GilroyBold;
+  color:#FFB600;
+}
+.box a {
+   color:#FFB600;
+
+  text-decoration: none; /* no underline */
+}
+.box a:hover{
+  text-decoration: underline;
+}
+
+.box img{
+/* object-fit:contain; */
+/* outline-color: 5px solid blue; */
+  padding-top: 0px;
+   width:200px;
+   height:auto;
+   margin:0;
+   padding:0;
+   transition-duration: 0.5s;
+
+
+}
+
+.box img{
+/* object-fit:contain; */
+/* outline-color: 5px solid blue; */
+  padding-top: 0px;
+   width:200px;
+   height:auto;
+   margin:0;
+   padding:0;
+   transition-duration: 0.5s;
+
+
+}
+#logoHeight{
+  height:200px;
+  /* background-color: pink; */
+  padding-right: 25px;
+
+}
+
+#logo img:hover{
+  opacity: 1.0;
+  /* transition-duration: 0.0s; */
+
+  /* border-bottom:5px solid #FFB600; */
+
+}
+
+#logo img{
+  width:250px;
+  height:auto;
+  opacity: 0;
+  transition-duration: 0.2s;
+  /* margin-right:50px; */
+
+
+}
+#logo{
+/* margin-top: 50px; */
+/* position:relative; */
+  z-index: 2;
+  /* height:200px; */
+transition-duration: 0.2s;
+position: absolute;
+
+   /* glow adapted from https://codersblock.com/blog/creating-glow-effects-with-css/ */
+
+  /* bottom:-250px; */
+}
+.noGlow{
+  /* background-color: pink; */
+  opacity: 1.0;
+  position: relative;
+}
+.noGlow img{
+  opacity: 1.0;
+  width:250px;
+  height:auto;
+  /* margin-right:50px; */
+}
+.noGlow img:hover{
+  opacity: 1.0;
+}
+
+.animatedButton a{
+  text-decoration: none; /* no underline */
+
+}
+.animatedButton p {
+
+  transition-duration: 0.5s;
+  width:75%;
+
+   color:black;
+   font-family: GilroyLight;
+  text-decoration: none; /* no underline */
+  border-radius: 5px;
+border: 2px solid black;
+padding: 5px;
+text-align:   center;
+}
+
+.animatedButton p:hover{
+  background-color: black;
+  color:#FFB600;
+  border-radius:5px;
+  box-shadow:
+   0 0 30px 2px #fff,
+   0 0 50px 2px blue,
+   0 0 10px 2px #0ff;
+}
+
+/* #logo img:hover{ cool effect but too distacting
+  border-radius:5px;
+  box-shadow:
+   0 0 30px 2px #fff,
+   0 0 50px 2px blue,
+   0 0 10px 2px #0ff; */
+   /* glow adapted from https://codersblock.com/blog/creating-glow-effects-with-css/ */
+
+/* } */
+
+/* .box img{
+  width:5px;
+  height:auto;
+} */
+
+
+
+
+
+.normalText{
+  display: inline;
+  font-family: GilroyLight;
+  color:#FFB600;
+}
+
+.boldText{
+  font-family:GilroyBold;
+  display: inline;
+}
+
+
+
+.trailerPlayer{
+  margin-top: 20px;
+}
+
+.wheretoListen{
+  margin-top: 150px;
+  text-align: center;
+  width:75%;
+  /* background-color: green; */
+  height:250px;
+  display: grid;
+  /* padding:10px; */
+  /* border: 4px solid white; */
+
+  grid-template-columns:5fr 5fr 5fr;
+}
+.podcastIconHolder{
+  /* border: 4px solid blue; */
+
+/* align-self: center; */
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+ h1 {
+  display:
+  text-align: center;
+  font-family: GilroyBold;
+  color:#FFB600;
+  margin:0;
+  padding:0;
+  font-size: 45px;
+}
+
+
+
+.button {
+  background-color: rgba(255,0,0,50);
+  border: none;
+  height:100px;
+  width:300;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.greyButton {
+  font-family: GilroyLight;
+  background-color: rgba(255,0,0,0);
+  color:#FFB600;
+;
+  border: 2px solid #FFB600;;
+
+}
+.greyButton:hover {
+  background-color: rgba(255,0,0,0);
+  box-shadow:
+   0 0 30px 15px #fff,  /* inner white */
+   0 0 50px 30px #f0f, /* middle magenta */
+   0 0 70px 45px #0ff; /* outer cyan */
+   /* glow adapted from https://codersblock.com/blog/creating-glow-effects-with-css/ */
+  ;}
+
+/* button used from https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_hover */
+
+.episodesButton{
+  position:absolute;
+  top:1690px;
+  /* background-color:blue; */
+}
+
+.socialLinksSection{
+  margin-top: 50px;
+  width:100%;
+  /* background-color: white; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.socialLinks{
+  margin-top: 5px;
+  display: grid;
+  width:600px;
+  /* background-color:green; */
+  grid-template-columns: 4fr 4fr 4fr 4fr;
+  height:auto;
+
+}
+
+.socialIcon{
+  text-align: center;
+  /* background-color:red; */
+  margin:15px;
+  /* border-radius: 5px;
+border: 2px solid white; */
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.iconOutline{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+border: 2px solid #FFB600;
+  height:65px;
+  width:65px;
+  transition-duration: 0.5s;
+
+}
+.socialIcon img{
+  width:50px;
+  height:auto;
+  /* border-radius: 15px; */
+  /* border-radius: 5px;
+border: 2px solid white; */
+  /* transition-duration: 0.5s; */
+
+
+}
+
+.iconOutline:hover{
+  box-shadow:
+   0 0 30px 2px #fff,
+   0 0 50px 2px blue,
+   0 0 10px 2px #0ff;
+}
+
+
+
+.bioSection{
+  z-index: 2;
+  margin-top: 25px;
+  width:45%;
+  height:400px;
+  /* background: linear-gradient(to bottom,#FFB600 50%, black) fixed; */
+  display: grid;
+  grid-template-columns: 10fr 14fr;
+    min-width: 940px;
+
+}
+
+.profilePic{
+  /* border: 1px solid white; */
+  position: relative;
+
+  width:400px;
+  height:auto;
+  /* background-color: magenta; */
+  /* background-image: url("DavidHeadshotSquare.png"); */
+  /* background-size: cover; */
+  /* display: flex;
+  justify-content: center; */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.profilePic img{
+  /* align-self: center; */
+  width:55%;
+  height:auto;
+
+  /* width: 100px;
+  height:auto; */
+  /* width:min(200px,30vw); */
+  transition-duration: 0.5s;
+
+
+}
+.circleBackground img{
+  position:absolute;
+  width:400px;
+  height:auto;
+  left:0;
+  top:0;
+  transition-duration: 0.9s;
+
+}
+
+.circleBackground img:hover
+{
+    /* cursor: default; */
+    transform: rotate(360deg);
+    transition: all 0.9s ease-in-out 0s;
+}
+
+/* .profilePic img:hover{
+  border-radius:5px;
+  box-shadow:
+   0 0 30px 2px #fff,
+   0 0 50px 2px blue,
+   0 0 10px 2px #0ff;  */
+   /* glow adapted from https://codersblock.com/blog/creating-glow-effects-with-css/ */
+
+ /* } */
+
+.bioText{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color:red; */
+  text-align: left;
+  padding:15px;
+  color:black;
+}
+
+.bioText h1{
+
+  /* text-decoration: underline; */
+  font-size:50px;
+/* color:black; */
+margin:0;
+padding:0;
+font-family: GilroyBold;
+}
+
+
+.bioText p{
+  font-size:25px;
+  font-family: GilroyLight;
+  color:#FFB600;
+
+}
